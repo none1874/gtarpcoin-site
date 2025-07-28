@@ -2,72 +2,111 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GTARP Coin - Oficial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTARP Coin</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 30px;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0f1a;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
     img {
       width: 200px;
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
       color: #ffd700;
     }
-    h2 {
-      font-size: 1.5em;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-    section {
+    p {
       max-width: 800px;
-      margin: auto;
-      background-color: #111;
-      border: 1px solid #333;
-      padding: 30px;
-      border-radius: 10px;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.6;
     }
-    strong {
-      color: #00ffcc;
+    canvas {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 900px;
+      height: 500px;
+      background-color: #1c1f2b;
+      border-radius: 12px;
+      padding: 20px;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo Oficial GTARP Coin" />
-  <h1>Bem-vindo ao <strong>GTARP Coin</strong></h1>
-  <h2>O token oficial da comunidade GTARP! 🚀</h2>
+  <img src="logo.png" alt="GTARP Coin Logo">
+  <h1>GTARP Coin: A moeda do futuro chegou</h1>
+  <p>
+    O <strong>GTARP Coin</strong> nasce com um propósito audacioso: se tornar a principal moeda dos servidores de roleplay (RP), unindo o universo gamer com a economia real. Com a chegada do tão aguardado <strong>GTA 6</strong>, o mundo dos games está prestes a explodir em popularidade — e nós estaremos no centro dessa revolução.
+  </p>
+  <p>
+    Imagine receber pagamentos reais por jogar, interagir e evoluir dentro do game. Imagine usar essa mesma moeda em plataformas reais, com valor crescente à medida que a adoção se expande. Isso já está acontecendo. O GTARP Coin é o elo entre o entretenimento e o investimento.
+  </p>
+  <p>
+    <strong>Lembra do Bitcoin?</strong> Era baratinho. Você não acreditou. Hoje ele vale dezenas de milhares de dólares... e muitos se arrependem de não ter investido. <strong>Não repita esse erro.</strong> GTARP Coin é uma nova chance de estar entre os primeiros. Uma nova oportunidade de multiplicar seu capital com inteligência, estratégia e timing. <strong>Com o lançamento de GTA 6, essa é a sua próxima chance dourada!</strong>
+  </p>
 
-  <section>
-    <h2>🌟 Sobre o GTARP Coin</h2>
-    <p>
-      O <strong>GTARP Coin (GTARP)</strong> é mais do que apenas um token — é o <strong>futuro da economia gamer</strong>.<br><br>
-      Com a chegada iminente do <strong>GTA 6</strong>, a comunidade RP está mais ativa e promissora do que nunca. E é nesse cenário explosivo que nasce o GTARP Coin: uma <strong>moeda digital criada para recompensar jogadores</strong> dentro do mundo GTA RP, e que também <strong>poderá ser utilizada fora do jogo</strong>, em trocas reais, pagamentos e serviços integrados à blockchain.<br><br>
-      Imagine <strong>ser pago para jogar</strong>, construir sua vida virtual e ainda <strong>valorizar seu patrimônio no mundo real</strong>.
-    </p>
+  <canvas id="gtarpChart"></canvas>
 
-    <h2>🚀 Por que o GTARP Coin é uma oportunidade real?</h2>
-    <ul style="text-align: left;">
-      <li>🌐 <strong>Utilidade real</strong> dentro de servidores GTA RP e fora deles</li>
-      <li>🤑 <strong>Valorização potencial</strong> com a explosão de novos jogadores com o GTA 6</li>
-      <li>🎮 <strong>Sistema de recompensas</strong>, trocas e pagamentos no ecossistema gamer</li>
-      <li>🔒 <strong>Segurança blockchain</strong> e transparência</li>
-      <li>📈 <strong>Supply limitado</strong>: apenas 21 milhões, como o Bitcoin</li>
-    </ul>
-
-    <h2>🔥 Prepare-se!</h2>
-    <p>
-      O GTARP Coin está na linha de frente de uma nova era.<br>
-      O lançamento do <strong>GTA 6</strong> promete uma revolução no mundo dos games, e o GTARP Coin está pronto para <strong>surfá-la com força total</strong>.<br><br>
-      <strong>Junte-se agora à comunidade, antes do hype — e seja recompensado por estar entre os primeiros!</strong>
-    </p>
-  </section>
+  <script>
+    const ctx = document.getElementById('gtarpChart').getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Hoje', 'Pré-GTA6', 'Lançamento GTA6', '3 meses depois', '6 meses depois', '1 ano depois'],
+        datasets: [{
+          label: 'Valorização Simulada do GTARP Coin (R$)',
+          data: [2, 8, 160, 600, 950, 1600],
+          borderColor: '#ffd700',
+          backgroundColor: 'rgba(255, 215, 0, 0.2)',
+          tension: 0.4,
+          fill: true,
+          pointBackgroundColor: '#ffffff',
+          pointRadius: 5,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            labels: {
+              color: '#ffffff'
+            }
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false
+          }
+        },
+        scales: {
+          x: {
+            ticks: {
+              color: '#ffffff'
+            },
+            grid: {
+              color: '#333'
+            }
+          },
+          y: {
+            beginAtZero: true,
+            ticks: {
+              color: '#ffffff'
+            },
+            grid: {
+              color: '#333'
+            }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
