@@ -7,66 +7,122 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #FFD700;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0c10;
+      color: #f2c744;
       text-align: center;
     }
     header {
       padding: 40px 20px;
     }
     img.logo {
-      width: 200px;
-      height: auto;
+      width: 180px;
       margin-bottom: 20px;
     }
     h1 {
-      font-size: 2.5em;
-      margin: 10px 0;
+      font-size: 2.7em;
+      color: #f2c744;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 40px;
+      color: #f2c744;
     }
     p {
       font-size: 1.2em;
-      max-width: 700px;
-      margin: auto;
-      padding: 10px 20px;
+      color: #ddd;
+      max-width: 800px;
+      margin: 10px auto;
+      line-height: 1.6;
     }
     .btn {
-      background-color: #FFD700;
+      background-color: #f2c744;
       color: #000;
       padding: 15px 30px;
       border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      margin-top: 20px;
+      border-radius: 6px;
+      font-size: 1.1em;
       cursor: pointer;
-      transition: background 0.3s;
+      margin: 20px 10px;
+      transition: background 0.3s ease;
     }
     .btn:hover {
-      background-color: #e5c100;
+      background-color: #d4ad36;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    a.link {
+      color: #f2c744;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.link:hover {
+      text-decoration: underline;
+    }
+    .social {
+      margin-top: 30px;
+    }
+    .social a {
+      text-decoration: none;
+      color: #f2c744;
+      font-size: 1.1em;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .social img {
+      width: 24px;
+      height: 24px;
     }
     footer {
-      margin-top: 40px;
+      margin-top: 50px;
       padding: 20px;
       font-size: 0.9em;
-      color: #888;
+      color: #777;
     }
   </style>
 </head>
 <body>
+
   <header>
     <img src="logo.png" alt="Logo GTARP Coin" class="logo" />
-    <h1>GTARP Coin</h1>
-    <p>O token revolucionário do universo GTA RP! Invista no que é novo, enquanto todos ainda duvidam — como fizeram com o Bitcoin no início.</p>
-    <a href="https://polygonscan.com/token/0x9A94aA23a4233a2567FBf91FbE2Da47B101cbA79" target="_blank">
-      <button class="btn">Ver contrato</button>
-    </a>
+    <h1>O Futuro do RP Está Aqui</h1>
+    <p>Imagine ter investido no Bitcoin em 2010. Agora você tem outra chance — o <strong>GTARP Coin</strong> é o novo fenômeno cripto que está explodindo no universo gamer e do Roleplay.</p>
     <a href="https://app.uniswap.org/swap?outputCurrency=0x9A94aA23a4233a2567FBf91FbE2Da47B101cbA79" target="_blank">
-      <button class="btn">Comprar agora</button>
+      <button class="btn">🚀 Comprar Agora</button>
+    </a>
+    <a href="Whitepapper.pdf" target="_blank">
+      <button class="btn">📄 Ler o Whitepaper</button>
     </a>
   </header>
+
+  <section class="section" id="sobre">
+    <h2>Sobre o GTARP Coin</h2>
+    <p>
+      O <strong>GTARP Coin</strong> nasceu com um propósito ousado: revolucionar a economia dos servidores de GTA RP e transformar os jogadores em investidores.
+      É um token com <strong>usabilidade real</strong>, que conecta comunidades, valoriza o engajamento e entrega oportunidades de crescimento para quem acredita cedo.
+    </p>
+  </section>
+
+  <section class="section" id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>
+      Somos uma equipe apaixonada por tecnologia, games e inovação. Atuamos há mais de <strong>5 anos no mercado digital</strong> com grandes influenciadores e criadores de conteúdo.
+      Agora, levamos toda essa experiência para o universo Web3 com o GTARP Coin — um projeto sério, transparente e focado na comunidade.
+    </p>
+  </section>
+
+  <div class="social">
+    <a href="https://instagram.com/gta_rp_coin" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+      @gta_rp_coin
+    </a>
+  </div>
 
   <footer>
     © 2025 GTARP Coin. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
