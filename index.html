@@ -4,120 +4,108 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GTARP Coin</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #000;
       color: #fff;
     }
     header {
-      background-color: #f1c40f;
-      color: #000;
-      padding: 10px 20px;
+      background-color: #f2c300;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    .logo {
-      font-weight: bold;
-      font-size: 24px;
+    header img.logo {
+      height: 40px;
     }
-    .instagram-link {
-      color: #000;
-      font-size: 24px;
-      text-decoration: none;
+    header .social a {
+      color: black;
+      font-size: 1.5rem;
+      margin-left: 1rem;
     }
-    .main {
+    section.hero {
       text-align: center;
-      padding: 40px 20px;
+      padding: 3rem 1rem;
+      background-color: #111;
     }
-    .main img {
-      width: 200px;
-      margin-bottom: 20px;
+    section.hero img {
+      max-width: 180px;
+      margin-bottom: 1rem;
     }
-    .main h1 {
-      color: #f1c40f;
-      font-size: 32px;
+    section.hero h1 {
+      font-size: 2rem;
+      color: #f2c300;
+      margin-bottom: 1rem;
     }
-    .main p {
-      font-size: 18px;
-      color: #ccc;
-      max-width: 600px;
-      margin: 0 auto 20px;
+    section.hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
     }
-    .btn {
-      background-color: #f1c40f;
-      color: #000;
-      padding: 12px 25px;
-      margin: 10px;
-      border: none;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      background-color: #f2c300;
+      color: black;
+      padding: 0.8rem 1.5rem;
       text-decoration: none;
-      display: inline-block;
+      border-radius: 6px;
+      font-weight: bold;
     }
-    .section {
-      background-color: #111827;
-      padding: 40px 20px;
+    section {
+      padding: 2rem 1rem;
       text-align: center;
     }
-    .section h2 {
-      color: #f1c40f;
-      font-size: 28px;
+    section h2 {
+      color: #f2c300;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
     }
-    .section p {
-      color: #ccc;
-      font-size: 16px;
-      max-width: 700px;
-      margin: 0 auto 20px;
-    }
-    .section ul {
-      list-style: none;
-      padding: 0;
-      color: #f1c40f;
-      font-size: 16px;
-      margin-top: 20px;
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">GTARP Coin</div>
-    <a class="instagram-link" href="https://instagram.com/gta_rp_coin" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
+    <div>
+      <img src="https://i.imgur.com/Zp4zAr7.png" alt="GTARP Coin Logo" class="logo">
+    </div>
+    <div class="social">
+      <a href="https://instagram.com/gta_rp_coin" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
   </header>
 
-  <div class="main">
-    <img src="https://i.imgur.com/m9CqNpA.png" alt="Logo GTARP Coin" />
+  <section class="hero">
     <h1>Invista no Token que Vai Dominar o Mundo RP</h1>
-    <p><strong>O GTARP Coin</strong> nasceu para transformar a economia dos servidores RP. Imagine ter investido no Bitcoin lá no começo... é essa a sua nova chance.</p>
-    <a class="btn" href="whitepaper.pdf" target="_blank">Whitepaper</a>
-    <a class="btn" href="https://app.uniswap.org" target="_blank">Comprar Agora</a>
-  </div>
+    <p><strong>O GTARP Coin</strong> nasceu para transformar a economia dos servidores RP. Imagine ter investido no Bitcoin lá no começo... essa é a sua nova chance.</p>
+    <div class="buttons">
+      <a href="whitepaper.pdf" target="_blank">Whitepaper</a>
+      <a href="https://app.uniswap.org/#/swap?outputCurrency=0x9A94aA23a4233a2567FBf91FbE2Da47B101cbA79" target="_blank">Comprar Agora</a>
+    </div>
+  </section>
 
-  <div class="section">
+  <section>
     <h2>Sobre o Token</h2>
-    <p>O GTARP Coin é um token desenvolvido para integrar a economia dos servidores de roleplay, oferecendo novas oportunidades de lucro, transações rápidas e segurança no universo virtual.</p>
-  </div>
+    <p>O GTARP Coin é um token desenvolvido para integrar a economia dos servidores de roleplay, oferecendo mais liberdade, valorização e potencial de lucros para os jogadores e investidores.</p>
+  </section>
 
-  <div class="section">
-    <h2>Tokenomics</h2>
-    <p>A distribuição do GTARP Coin foi planejada para garantir estabilidade, crescimento e valorização contínua:</p>
-    <ul>
-      <li>🔸 40% - Liquidez e Exchanges</li>
-      <li>🔸 20% - Recompensas para a Comunidade</li>
-      <li>🔸 15% - Desenvolvimento do Projeto</li>
-      <li>🔸 10% - Marketing e Parcerias</li>
-      <li>🔸 10% - Reserva Estratégica</li>
-      <li>🔸 5% - Equipe e Fundadores (com bloqueio por tempo)</li>
-    </ul>
-    <p>Uma tokenomics pensada para valorizar desde o início quem acreditar no projeto. Transparência, crescimento e oportunidade.</p>
-  </div>
+  <footer>
+    &copy; 2025 GTARP Coin. Todos os direitos reservados.
+  </footer>
 
 </body>
 </html>
